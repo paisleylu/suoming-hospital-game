@@ -1,0 +1,49 @@
+Female high-pitched scream SFX
+Source: https://opengameart.org/content/female-high-pitched-scream-sfx
+Download: https://opengameart.org/sites/default/files/screams_0.ogg
+License: CC0
+Adaptation: converted to WAV, split into four short clips, normalized, fades added.
+
+Additional scream clips 5–9: “Screaming” by Macro. Required attribution: SFX by Dan Knoflicek.
+Source: https://opengameart.org/content/screaming
+License: Creative Commons Attribution 3.0 Unported, https://creativecommons.org/licenses/by/3.0/
+Adaptations: Scream 1.wav through Scream 5.wav, excerpts trimmed and normalized, fades added, PCM WAV conversion.
+
+Ghost voices 10–14: sound designs derived from previously credited CC0 and CC-BY 3.0 clips. Transformations: pitch resampling, layered voice, filtering, modulation, stutter, short echo, normalized peaks and fades. SFX source credit: Dan Knoflicek / Macro and Female high-pitched scream SFX on OpenGameArt.
+[
+  {
+    "number": 10,
+    "name": "裂瓷尖啸",
+    "source": 1,
+    "duration": 1.04,
+    "peak": 26214
+  },
+  {
+    "number": 11,
+    "name": "镜片医生嘶叫",
+    "source": 5,
+    "duration": 1.04,
+    "peak": 26214
+  },
+  {
+    "number": 12,
+    "name": "湿发病患喉音",
+    "source": 7,
+    "duration": 1.04,
+    "peak": 26214
+  },
+  {
+    "number": 13,
+    "name": "逆笑断续尖叫",
+    "source": 3,
+    "duration": 1.04,
+    "peak": 26214
+  },
+  {
+    "number": 14,
+    "name": "暗影低吼",
+    "source": 8,
+    "duration": 1.04,
+    "peak": 26214
+  }
+]

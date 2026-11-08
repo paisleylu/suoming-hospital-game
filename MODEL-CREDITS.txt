@@ -1,0 +1,14 @@
+Creative Commons Licence
+Infinite, 3D Head Scan by Lee Perry-Smith is licensed under a Creative Commons Attribution 3.0 Unported License.
+Based on a work at www.triplegangers.com.
+Permissions beyond the scope of this license may be available at http://www.ir-ltd.net/
+Please remember: Do what you want with the files, but always mention where you got them from...
+
+Source: https://github.com/mrdoob/three.js/tree/dev/examples/models/gltf/LeePerrySmith
+Adaptations: resized, desaturated and reshaped for the game.
+Environment textures: ambientCG Plaster001 and Tiles074 (CC0).
+
+CC0 scene models from Poly Haven: wheelchair_01, old_bed_frame, painted_wooden_cabinet. https://polyhaven.com/models
+
+Human body topology: MakeHuman community base mesh, explicitly released CC0 September 2020. https://github.com/makehumancommunity/makehuman/blob/master/makehuman/data/3dobjs/base.obj
+Fabric026: ambientCG, CC0.
