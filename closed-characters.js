@@ -1,1 +1,1 @@
-const closedCharacters=[];
+var closedCharacters=window.closedCharacters=window.closedCharacters||[];

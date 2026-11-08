@@ -1,1 +1,1 @@
-const sceneModels={};
+var sceneModels=window.sceneModels=window.sceneModels||{};

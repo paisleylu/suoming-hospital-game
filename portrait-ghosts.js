@@ -1,5 +1,5 @@
 // Closed humanoids with individual portrait textures, proportions, garments and medical accessories.
-const portraitGhostDefinitions=[
+var portraitGhostDefinitions=window.portraitGhostDefinitions=window.portraitGhostDefinitions||[
 {name:'裂瓷面孔',face:'scare-cracked-porcelain.jpg',body:5,scale:[.88,1.10,.86],waist:.88,shoulders:.92,cloth:0x98998c,skin:0x999c8b,style:'gown',voice:9},
 {name:'镜片医生',face:'scare-glass-doctor.jpg',body:3,scale:[.94,1.04,.95],waist:1.02,shoulders:1.08,cloth:0xa4aa9b,skin:0x93947d,style:'coat',voice:10},
 {name:'湿发病患',face:'scare-wet-patient.jpg',body:1,scale:[.92,1.02,.93],waist:.90,shoulders:1.0,cloth:0x657d7a,skin:0x748880,style:'patient',voice:11},
