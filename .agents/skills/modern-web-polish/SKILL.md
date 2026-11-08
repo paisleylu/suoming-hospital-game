@@ -49,3 +49,4 @@ description: 现代 Web 前端美化、移动端触控优化、PWA/离线化与 
   ```
 - **贴图各向异性过滤**：
   将 `anisotropy` 限制在 `Math.min(8, renderer.capabilities.getMaxAnisotropy())`，既保证地砖远景不模糊，又避免低端 GPU 产生填充率瓶颈。
+

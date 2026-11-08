@@ -93,3 +93,4 @@ const imageAssets = { ... };
 3. **推送至 GitHub Pages**：
    - 先 `git pull origin main`，再 `git push origin main`。
    - 等待 GitHub Actions 完成静态构建，在线验证网址：[https://paisleylu.github.io/suoming-hospital-game/](https://paisleylu.github.io/suoming-hospital-game/)。
+
