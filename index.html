@@ -21,7 +21,9 @@
       position: absolute;
       inset: 0;
     }
-    button, input, select {
+    button,
+    input,
+    select {
       font: inherit;
     }
     button {
@@ -85,7 +87,8 @@
       margin: 18px 0;
       flex-wrap: wrap;
     }
-    select, input {
+    select,
+    input {
       background: #101b18;
       color: #dce4d5;
       border: 1px solid #536258;
@@ -247,7 +250,7 @@
         她说：“如果听见第七次铃响，不要回头。”
       </p>
       <div class="row">
-        <label for="difficulty" style="font-weight:600;color:#c0cdc3">难度</label>
+        <label for="difficulty" style="font-weight: 600; color: #c0cdc3;">难度</label>
         <select id="difficulty">
           <option value="peaceful" selected>安心探索 · 只有场景，没有惊吓</option>
           <option value="easy">简单 · 追逐较慢，谜题有提示</option>
@@ -259,21 +262,24 @@
         </select>
       </div>
 
-      <div id="loadBox" style="margin:16px 0 20px">
-        <div style="display:flex;justify-content:space-between;font-size:12px;color:#a8bba8;margin-bottom:6px">
+      <div id="loadBox" style="margin: 16px 0 20px;">
+        <div style="display: flex; justify-content: space-between; font-size: 12px; color: #a8bba8; margin-bottom: 6px;">
           <span id="gameLoading" role="status">正在准备医疗档案与病区数据…</span>
-          <span id="loadPercent" style="font-family:monospace;font-weight:bold;color:#79d29b">0%</span>
+          <span id="loadPercent" style="font-family: monospace; font-weight: bold; color: #79d29b;">0%</span>
         </div>
-        <div style="width:100%;height:8px;background:#060f0d;border:1px solid #334c3e;border-radius:4px;overflow:hidden;box-shadow:inset 0 1px 3px #000">
-          <div id="loadBar" style="width:0%;height:100%;background:linear-gradient(90deg,#2f634b,#59b87f);transition:width .15s ease-out"></div>
+        <div style="width: 100%; height: 8px; background: #060f0d; border: 1px solid #334c3e; border-radius: 4px; overflow: hidden; box-shadow: inset 0 1px 3px #000;">
+          <div id="loadBar" style="width: 0%; height: 100%; background: linear-gradient(90deg, #2f634b, #59b87f); transition: width 0.15s ease-out;"></div>
         </div>
       </div>
 
-      <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <div style="display: flex; gap: 12px; flex-wrap: wrap;">
         <button id="begin" disabled>素材载入中，请稍候…</button>
-        <button id="inspectModel" disabled style="background:#36463c">静态模型查看</button>
+        <button id="inspectModel" disabled style="background: #36463c;">静态模型查看</button>
       </div>
-      <p class="small">新增玩法：按 E 抱起整个人并按 Q 丢出去（砸中怨灵直接跌倒 2 秒）、「第七次铃响」规则博弈、26鬼四大差异化感知、镇静剂抛投、二楼心电调频与发电机联动、病床伪装及「1998夜班巡检」独立模式。<br>横屏体验：左侧摇杆移动，右侧滑动转视角，点击按钮互动、丢出物品和奔跑。右上角可随时开关不死模式和突脸。</p>
+      <p class="small">
+        新增玩法：按 E 抱起整个人并按 Q 丢出去（砸中怨灵直接跌倒 2 秒）、「第七次铃响」规则博弈、26鬼四大差异化感知、镇静剂抛投、二楼心电调频与发电机联动、病床伪装及「1998夜班巡检」独立模式。<br>
+        横屏体验：左侧摇杆移动，右侧滑动转视角，点击按钮互动、丢出物品和奔跑。右上角可随时开关不死模式和突脸。
+      </p>
     </div>
   </div>
 
@@ -294,11 +300,11 @@
 
   <script>
     (function () {
-      var status = document.getElementById('gameLoading'),
-        loadPercent = document.getElementById('loadPercent'),
-        loadBar = document.getElementById('loadBar'),
-        begin = document.getElementById('begin'),
-        inspect = document.getElementById('inspectModel');
+      var status = document.getElementById('gameLoading');
+      var loadPercent = document.getElementById('loadPercent');
+      var loadBar = document.getElementById('loadBar');
+      var begin = document.getElementById('begin');
+      var inspect = document.getElementById('inspectModel');
 
       var files = [
         "lib/three.min.js",
@@ -333,7 +339,9 @@
         "src/mobile-controls.js?v=v2-fix"
       ];
 
-      var index = 0, failed = false, complete = false;
+      var index = 0;
+      var failed = false;
+      var complete = false;
 
       function fail(message) {
         if (failed || complete) return;
@@ -372,7 +380,10 @@
 
       function load(attempt) {
         if (failed || index >= files.length) return;
-        var file = files[index], tag = document.createElement('script'), done = false, timer;
+        var file = files[index];
+        var tag = document.createElement('script');
+        var done = false;
+        var timer;
         var pct = Math.round((index / files.length) * 100);
         loadBar.style.width = pct + '%';
         loadPercent.textContent = pct + '%';
