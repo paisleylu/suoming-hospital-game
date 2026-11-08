@@ -1,0 +1,1 @@
+closedCharacters[2].closed=true;
